@@ -1,0 +1,430 @@
+<div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+        try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+    </script>
+
+    <!-- .breadcrumb 面包屑导航条-->
+    <ul class="breadcrumb">
+        <li>
+            <i class="icon-home home-icon"></i>
+            <a href="#">首页</a>
+        </li>
+        <li>
+            <a href="#">用户管理</a>
+        </li>
+        <li class="active">用户信息认证</li>
+    </ul>
+
+    <!-- #nav-search 搜索框-->
+    <div class="nav-search" id="nav-search">
+        <form class="form-search">
+            <span class="input-icon">
+                <input type="text" placeholder="搜索 ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                <i class="icon-search nav-search-icon"></i>
+            </span>
+        </form>
+    </div>
+</div>
+<!-- /.page-content  页面详细内容 -->
+<div class="page-content">
+    <!-- /.page-header -->
+    <div class="page-header">
+        <h1>
+            用户管理
+            <small>
+                <i class="icon-double-angle-right"></i>
+                用户信息认证
+            </small>
+        </h1>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- PAGE CONTENT BEGINS -->
+            <div class="alert alert-info">
+                <i class="icon-hand-right"></i>
+                    请注意：演示服务器的配置不保存更改，因此您可能会收到一条错误消息。
+                <button class="close" data-dismiss="alert">
+                    <i class="icon-remove"></i>
+                </button>
+            </div>
+            <table id="grid-table"></table>
+            <div id="grid-pager"></div>
+            <script type="text/javascript">
+                var $path_base = "/";//this will be used in gritter alerts containing images
+            </script>
+        </div>
+    </div>
+    <!-- /#ace-settings-container -->
+</div>
+<!-- #dialog-confirm -->
+<div id="dialog-confirm" class="hide">
+    <label class="control-label bolder blue">状态</label>
+    <div>
+        <label>
+            <input name="form-field-radio" type="radio" class="ace"/>&nbsp;
+            <span class="lbl">认证通过</span>
+        </label>
+        <label style="margin-left: 20px;">
+            <input name="form-field-radio" type="radio" class="ace"/>&nbsp;
+            <span class="lbl">认证不通过</span>
+        </label>
+    </div>
+    <div>
+        <label class="control-label bolder blue">备注</label>
+        <textarea class="form-control" id="form-field-8" placeholder="备注信息"></textarea>
+    </div>
+</div>
+<script src="lib/js/date-time/bootstrap-datepicker.min.js"></script>
+<script src="lib/js/jqGrid/jquery.jqGrid.min.js"></script>
+<script src="lib/js/jqGrid/i18n/grid.locale-en.js"></script>
+<script type="text/javascript">
+var grid_data =
+        [
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"},
+            {username:"双爷",truename:"杨双",idnum:"513711198611202582",email:"yangshaung@163.com",phone:"13880785479",statue:"正常",qq:"564514567",time:"2014-12-03",control:"认证"}
+        ];
+
+jQuery(function($) {
+    var grid_selector = "#grid-table";
+    var pager_selector = "#grid-pager";
+
+    jQuery(grid_selector).jqGrid({
+        //direction: "rtl",
+        data: grid_data,//数组
+        datatype: "local",//从服务器返回的数据类型  默认xml
+        height: '100%',//表格高度（数字  像素 百分比）
+        colNames:[' ', '用户名','真实姓名','身份证号码', '用户的email', '手机','状态','qq','注册时间','操作'],//列显示名称  数组对象
+        //Array name 列显示的名称；index 传到服务器端用来排序用的列名称；width 列宽度 只能是象素值；align 对齐方式；sortable 是否可以排序
+        colModel:[
+            {name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
+                formatter:'actions',//对列进行格式化时设置的函数名或者类型
+                formatoptions:{
+                    keys:true,
+                    //当从服务器端返回的数据中没有id时，将此作为唯一rowid使用只有一个列可以做这项设置。如果设置多于一个，那么只选取第一个，其他被忽略
+                    delOptions:{recreateForm: true, beforeShowForm:beforeDeleteCallback}
+                    //editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
+                }//对某些列进行格式化的设置
+            },
+            {name:'username',index:'username', width:50,editable: true ,editoptions:{size:"20",maxlength:"30"}},
+            {name:'truename',index:'truename',width:50, editable:true, editoptions:{size:"20",maxlength:"30"}},
+            {name:'idnum',index:'idnum', width:110,editable: true,editoptions:{size:"20",maxlength:"30"}},
+            {name:'email',index:'email', width:110, editable: true,editoptions:{size:"20",maxlength:"30"}},
+            {name:'phone',index:'phone', width:70, editable: true,editoptions:{size:"20",maxlength:"30"}},
+            {name:'statue',index:'statue', width:50, sortable:false,editable: true},
+            {name:"qq",index:'qq',width:75,editable:true,editoptions:{size:"20",maxlength:"30"}},
+            {name:"time",index:'time',width:75,editable:true,sorttype:"date",unformat:pickDate},
+            {name:"control",index:"control",width:50,
+                formatter: function(){ return "<button class='btn btn-minier btn-primary approve'>认证</button>" }
+            }
+        ],
+        //editable 定义是否可编辑;editoptions 编辑一系列选项；edittype 可以编辑的类型 可选值：text, textarea, select, checkbox, password, button, image and file;
+
+        viewrecords : true,//定义是否显示总记录数
+        rowNum:10,//显示记录条数
+        rowList:[10,20,30],//下拉框 改变显示记录条数
+        pager : pager_selector,//定义翻页用的导航栏
+        altRows: true,//设置表格 zebra-striped 值
+        //toppager: true,
+
+        multiselect: true,//定义是否可以多选
+        //multikey: "ctrlKey",
+        multiboxonly: true,//只有当multiselect = true.起作用，当multiboxonly 为ture时只有选择checkbox才会起作用
+
+        loadComplete : function() {
+            var table = this;
+            setTimeout(function(){
+                styleCheckbox(table);
+
+                updateActionIcons(table);
+                updatePagerIcons(table);
+                enableTooltips(table);
+            }, 0);
+        },
+
+        editurl: $path_base+"/dummy.html",//nothing is saved 定义对form编辑时的url
+        caption: "用户信息认证表",//表格名称
+        autowidth: true//如果为true时，则当表格在首次被创建时会根据父元素比例重新调整表格宽度。如果父元素宽度改变，为了使表格宽度能够自动调整则需要实现函数：setGridWidth
+    });
+    //enable search/filter toolbar
+    //jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+    //switch element when editing inline
+    function aceSwitch( cellvalue, options, cell ) {
+        setTimeout(function(){
+            $(cell) .find('input[type=checkbox]')
+                    .wrap('<label class="inline" />')
+                    .addClass('ace ace-switch ace-switch-5')
+                    .after('<span class="lbl"></span>');
+        }, 0);
+    }
+    //enable datepicker
+    function pickDate( cellvalue, options, cell ) {
+        setTimeout(function(){
+            $(cell) .find('input[type=text]')
+                    .datepicker({format:'yyyy-mm-dd' , autoclose:true});
+        }, 0);
+    }
+//    //表格自适应大小
+//    $(window).resize(function(){
+//        $("#gbox_grid-table").setGridWidth($(window).width*0.75);
+//    });
+    //navButtons
+    jQuery(grid_selector).jqGrid('navGrid',pager_selector,
+            { 	//navbar options
+                edit: true,
+                editicon : 'icon-pencil blue',
+                add: true,
+                addicon : 'icon-plus-sign purple',
+                del: true,
+                delicon : 'icon-trash red',
+                search: true,
+                searchicon : 'icon-search orange',
+                refresh: true,
+                refreshicon : 'icon-refresh green',
+                view: true,
+                viewicon : 'icon-zoom-in grey'
+            },
+            {
+                //edit record form 编辑行
+                //closeAfterEdit: true,
+                recreateForm: true,
+                beforeShowForm : function(e) {
+                    var form = $(e[0]);
+                    form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />');
+                    style_edit_form(form);
+                }
+            },
+            {
+                //new record form 添加
+                closeAfterAdd: true,
+                recreateForm: true,
+                viewPagerButtons: false,
+                beforeShowForm : function(e) {
+                    var form = $(e[0]);
+                    form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />');
+                    style_edit_form(form);
+                }
+            },
+            {
+                //delete record form 删除
+                recreateForm: true,
+                beforeShowForm : function(e) {
+                    var form = $(e[0]);
+                    if(form.data('styled')) return false;
+
+                    form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />');
+                    style_delete_form(form);
+
+                    form.data('styled', true);
+                },
+                onClick : function(e) {
+                    alert(1);
+                }
+            },
+            {
+                //search form  搜索
+                recreateForm: true,
+                afterShowSearch: function(e){
+                    var form = $(e[0]);
+                    form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />');
+                    style_search_form(form);
+                },
+                afterRedraw: function(){
+                    style_search_filters($(this));
+                }
+                ,
+                multipleSearch: true
+                /**
+                 multipleGroup:true,
+                 showQuery: true
+                 */
+            },
+            {
+                //view record form 查看
+                recreateForm: true,
+                beforeShowForm: function(e){
+                    var form = $(e[0]);
+                    form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+                }
+            }
+    );
+
+
+
+    function style_edit_form(form) {
+        //enable datepicker on "sdate" field and switches for "stock" field
+        form.find('input[name=sdate]').datepicker({format:'yyyy-mm-dd' , autoclose:true})
+                .end().find('input[name=stock]')
+                .addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+
+        //update buttons classes
+        var buttons = form.next().find('.EditButton .fm-button');
+        buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+        buttons.eq(0).addClass('btn-primary').prepend('<i class="icon-ok"></i>');
+        buttons.eq(1).prepend('<i class="icon-remove"></i>');
+
+        buttons = form.next().find('.navButton a');
+        buttons.find('.ui-icon').remove();
+        buttons.eq(0).append('<i class="icon-chevron-left"></i>');
+        buttons.eq(1).append('<i class="icon-chevron-right"></i>');
+    }
+
+    function style_delete_form(form) {
+        var buttons = form.next().find('.EditButton .fm-button');
+        buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+        buttons.eq(0).addClass('btn-danger').prepend('<i class="icon-trash"></i>');
+        buttons.eq(1).prepend('<i class="icon-remove"></i>')
+    }
+
+    function style_search_filters(form) {
+        form.find('.delete-rule').val('X');
+        form.find('.add-rule').addClass('btn btn-xs btn-primary');
+        form.find('.add-group').addClass('btn btn-xs btn-success');
+        form.find('.delete-group').addClass('btn btn-xs btn-danger');
+    }
+    function style_search_form(form) {
+        var dialog = form.closest('.ui-jqdialog');
+        var buttons = dialog.find('.EditTable');
+        buttons.find('.EditButton a[id*="_reset"]').addClass('btn btn-sm btn-info').find('.ui-icon').attr('class', 'icon-retweet');
+        buttons.find('.EditButton a[id*="_query"]').addClass('btn btn-sm btn-inverse').find('.ui-icon').attr('class', 'icon-comment-alt');
+        buttons.find('.EditButton a[id*="_search"]').addClass('btn btn-sm btn-purple').find('.ui-icon').attr('class', 'icon-search');
+    }
+
+    function beforeDeleteCallback(e) {
+        var form = $(e[0]);
+        if(form.data('styled')) return false;
+
+        form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />');
+        style_delete_form(form);
+
+        form.data('styled', true);
+    }
+
+    function beforeEditCallback(e) {
+        var form = $(e[0]);
+        form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />');
+        style_edit_form(form);
+    }
+
+
+
+    //it causes some flicker when reloading or navigating grid
+    //it may be possible to have some custom formatter to do this as the grid is being created to prevent this
+    //or go back to default browser checkbox styles for the grid
+    function styleCheckbox(table) {
+        /**
+         $(table).find('input:checkbox').addClass('ace')
+         .wrap('<label />')
+         .after('<span class="lbl align-top" />')
+
+
+         $('.ui-jqgrid-labels th[id*="_cb"]:first-child')
+         .find('input.cbox[type=checkbox]').addClass('ace')
+         .wrap('<label />').after('<span class="lbl align-top" />');
+         */
+    }
+
+
+    //unlike navButtons icons, action icons in rows seem to be hard-coded
+    //you can change them like this in here if you want
+    function updateActionIcons(table) {
+        /**
+         var replacement =
+         {
+             'ui-icon-pencil' : 'icon-pencil blue',
+             'ui-icon-trash' : 'icon-trash red',
+             'ui-icon-disk' : 'icon-ok green',
+             'ui-icon-cancel' : 'icon-remove red'
+         };
+         $(table).find('.ui-pg-div span.ui-icon').each(function(){
+						var icon = $(this);
+						var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+						if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+					})
+         */
+    }
+
+    //replace icons with FontAwesome icons like above
+    function updatePagerIcons(table) {
+        var replacement =
+        {
+            'ui-icon-seek-first' : 'icon-double-angle-left bigger-140',
+            'ui-icon-seek-prev' : 'icon-angle-left bigger-140',
+            'ui-icon-seek-next' : 'icon-angle-right bigger-140',
+            'ui-icon-seek-end' : 'icon-double-angle-right bigger-140'
+        };
+        $('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function(){
+            var icon = $(this);
+            var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+            if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+        })
+    }
+
+    function enableTooltips(table) {
+        $('.navtable .ui-pg-button').tooltip({container:'body'});
+        $(table).find('.ui-pg-div').tooltip({container:'body'});
+    }
+    //var selr = jQuery(grid_selector).jqGrid('getGridParam','selrow');
+});
+</script>
+<script src="lib/js/jquery-ui-1.10.3.full.min.js"></script>
+<script src="lib/js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript">
+
+    //    $(".ui-jqgrid-view td").css("text-align","center");
+
+    //认证点击事件
+    $( ".approve" ).on('click', function(e) {
+        e.preventDefault();
+        $( "#dialog-confirm" ).removeClass('hide').dialog({
+            resizable: false,
+            modal: true,
+            title: "认证",
+            title_html: true,
+            buttons: [
+                {
+                    html: "<i class='icon-ok-circle bigger-110'></i>&nbsp;保存",
+                    "class" : "btn btn-danger btn-xs",
+                    click: function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+                ,
+                {
+                    html: "<i class='icon-remove bigger-110'></i>&nbsp;取消",
+                    "class" : "btn btn-xs",
+                    click: function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+            ]
+        });
+    });
+</script>
